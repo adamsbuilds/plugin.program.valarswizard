@@ -1,6 +1,6 @@
-id="plugin.program.aftermath"
-version="0.4.5"
-zip="url.to.wizard"
+id="plugin.program.adamswizard"
+version="1.0"
+zip="https://raw.githubusercontent.com/adamsbuilds/repo/master/zips/"
 
 name="Example Build 1"
 version="1.0"
