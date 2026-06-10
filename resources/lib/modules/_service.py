@@ -52,7 +52,7 @@ class Startup:
                            setting_set('update_passed', 'true')
                        
                    elif update_available == 2:
-                       if changelog_dir in ('', 'http://', 'http://CHANGEME/'):
+                       if changelog_dir == 'http://CHANGEME' or '':
                            xbmcgui.Dialog().notification(addon_name, 'No Changelog to Display!!', addon_icon, 3000)
                            Startup().check_updates()
                        else:
@@ -179,3 +179,4 @@ class Startup:
             self.check_updates()
         if binaries_path.exists():
             restore_binary()
+

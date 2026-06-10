@@ -195,7 +195,6 @@ def truncate_tables():
         cursor.execute('DELETE FROM addons;',)
         cursor.execute('DELETE FROM package;',)
         cursor.execute('DELETE FROM repo;',)
-        cursor.execute('DELETE FROM update_rules;',)
         cursor.execute('DELETE FROM version;',)
         con.commit()
     except sqlite3.Error as e:

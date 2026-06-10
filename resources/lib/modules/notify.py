@@ -1,7 +1,6 @@
 import xbmc
 import xbmcgui
 import xbmcaddon
-import re
 from ..modules.parser import get_page
 from ..modules import _service
 from uservar import notify_url, changelog_dir
@@ -20,8 +19,7 @@ def get_notify() -> list:
 
 def get_changelog():
     build = setting('buildname')
-    rm_colors = "".join(re.split("\[|\]", build)[::2])
-    filename = rm_colors.replace(' ', '%20')
+    filename = build.replace(' ', '%20')
     changelog = '%s%s.txt' %(changelog_dir, filename)
     message = get_page(changelog)
     return message

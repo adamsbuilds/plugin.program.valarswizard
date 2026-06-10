@@ -87,8 +87,8 @@ def save_backup_restore(_type: str) -> None:
         for item in item_list.keys():
             setting_id = item_list[item]['setting']
             path = item_list[item]['path']
+            redlight = item + '/databases/settings.db'
             data = item + '/settings.xml'               #Addon settings
-            fenlight = item + '/databases/settings.db'  #Fen Light settings
             realizer = item + '/rdauth.json'            #Realizer debrid data
             youtube = item + '/api_keys.json'           #Youtube API Keys
             if path == 'user_path':
@@ -101,7 +101,7 @@ def save_backup_restore(_type: str) -> None:
                         tasks = [
                             (path, data),               #Backup all addon data
                             (user_path, item),          #Backup Kodi specifics
-                            (path, fenlight),           #Backup Fen Light
+                            (path, redlight),           #Backup redlight
                             (path, realizer),           #Backup Realizer data
                             (path, youtube),            #Backup Youtube data
                         ]
