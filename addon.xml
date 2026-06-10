@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.adamswizard" name="AdamsWizard" version="1.0" provider-name="Slam, Sarge, Funsterbe, BYB">
+<addon id="plugin.program.valarswizard" name="ValarsWizard" version="1.7" provider-name="Slam, Sarge, Funsterbe, BYB, adamsbuilds">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -8,9 +8,9 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">AdamsWizard is a build wizard for AdamsBuilds, it has tools to backup/restore builds and to perform general maintenance of kodi.  Creator does no host any content and is not repsonsible for any content provided by third party addons.  This is a fork of simplewizard</summary>
+		<summary lang="en_GB">ValarsWizard is a tool for backup/restore and maintenance of Kodi builds.  Forked from simplewizard.</summary>
 		<description lang="en_GB">Kodi Wizard</description>
-		<disclaimer lang="en_GB">Creator does no host any content and is not repsonsible for any content provided by third party addons.</disclaimer>
+		<disclaimer lang="en_GB">This Addon contains no content.  Creator assumes no responsibily for content obtained by 3rd party addons. Use at your own risk!</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-2.0-or-later</license>
