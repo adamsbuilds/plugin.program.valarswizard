@@ -1,2 +1,2 @@
-# plugin.program.Valarswizard
+# plugin.program.valarswizard
 ValarsWizard for Kodi
