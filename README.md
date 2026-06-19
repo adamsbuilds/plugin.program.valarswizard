@@ -1,2 +1,2 @@
-# plugin.program.adamswizard
-AdamsWizard for Kodi
+# plugin.program.Valarswizard
+ValarsWizard for Kodi
